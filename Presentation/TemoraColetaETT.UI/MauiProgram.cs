@@ -72,6 +72,9 @@ namespace TemoraColetaETT.UI
             services.AddTransient<RegisterPersonViewModel>();
             services.AddTransient<RegisterPersonView>();
 
+            services.AddTransient<FacialBiometricsViewModel>();
+            services.AddTransient<FacialBiometricsView>();
+
             services.AddSingleton<AppShellViewModel>();
             services.AddTransient<AppShell>();
         }

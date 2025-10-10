@@ -69,6 +69,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = TemoraColetaETT.UI.Views.D
 build_metadata.AdditionalFiles.TargetPath = Views\DashboardView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DashboardView.xaml
 
+[C:/Users/Giusoft/Documents/GitHub/TemoraColetaETT/Presentation/TemoraColetaETT.UI/Views/FacialBiometricsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TemoraColetaETT.UI.Views.FacialBiometricsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FacialBiometricsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FacialBiometricsView.xaml
+
 [C:/Users/Giusoft/Documents/GitHub/TemoraColetaETT/Presentation/TemoraColetaETT.UI/Views/LoginView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TemoraColetaETT.UI.Views.LoginView.xaml

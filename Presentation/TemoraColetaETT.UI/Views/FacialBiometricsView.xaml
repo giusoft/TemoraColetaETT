@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemoraColetaETT.UI.Views.FacialBiometricsView"
+             xmlns:viewmodel="clr-namespace:TemoraColetaETT.UI.ViewModels"
+             Title="Coleta Facial">
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label 
+            Text="Biometria Facial"
+            FontSize="24"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Image
+            x:Name="PhotoImage"
+            Source="{Binding PhotoSource}"
+            HeightRequest="300"
+            WidthRequest="300"
+            BackgroundColor="LightGray"
+            Aspect="AspectFit" />
+
+        <Button
+            Text="Capturar Foto"
+            Command="{Binding CapturePhotoCommand}"
+            HorizontalOptions="Center" />
+            
+        <Label
+            Text="{Binding StatusMessage}"
+            HorizontalOptions="Center"
+            TextColor="Gray" />
+
+    </VerticalStackLayout>
+</ContentPage>
