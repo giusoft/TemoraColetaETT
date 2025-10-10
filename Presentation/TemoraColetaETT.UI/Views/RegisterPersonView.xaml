@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:TemoraColetaETT.UI.Views.Components"
+             x:Class="TemoraColetaETT.UI.Views.RegisterPersonView"
+             Title="RegisterPersonView">
+
+    <VerticalStackLayout Padding="20" Spacing="2">
+        <Label 
+            Text="Dados Pessoais"
+            FontSize="24"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <!-- Campo "Nome Completo" -->
+        <components:ComponentEntryInput 
+            Label="Nome completo: "
+            Placeholder="Nome Completo"
+            Valor="{Binding FormData.NomeCompleto}" 
+            MaxLength="70" />
+
+        <!-- Campo "Nome da mãe" -->
+        <components:ComponentEntryInput 
+            Label="Nome da mãe: "
+            Placeholder="Nome da mãe"
+            Valor="{Binding FormData.NomeMae}" 
+            MaxLength="70" />
+
+        <!-- Campo "Nome do pai" -->
+        <components:ComponentEntryInput 
+            Label="Nome do pai: "
+            Placeholder="Nome do pai"
+            MaxLength="70" />
+
+        <!-- Campo "CPF" -->
+        <components:ComponentEntryInput 
+            Label="CPF: "
+            Placeholder="CPF"
+            TipoTeclado="Numeric"
+            Valor="{Binding FormData.CPF}" 
+            MaxLength="11" />
+
+        <!-- Campo "RG" -->
+        <components:ComponentEntryInput 
+            Label="RG: "
+            Placeholder="RG"
+            TipoTeclado="Numeric"
+            Valor="{Binding FormData.RG}" 
+            MaxLength="12" />
+
+        <!-- Campo "Número do RENACH" -->
+        <components:ComponentEntryInput 
+            Label="RENACH: "
+            Placeholder="RENACH"
+            TipoTeclado="Numeric"
+            Valor="{Binding FormData.RENACH}" 
+            MaxLength="11"
+            IsVisible="{Binding IsDriverRegistration}" />
+
+        <!-- O campo de Data de Nascimento permanece, pois usa um DatePicker -->
+        <Label
+            Text="Data de Nascimento: "
+            VerticalOptions="Center"
+            HorizontalOptions="Start" Margin="0,0,0,10" />
+        <DatePicker
+            Date="{Binding FormData.DataNascimento}" />
+
+        <components:NextStepButton
+            ButtonText="{Binding NextButtonText}"
+            ButtonCommand="{Binding NextStepCommand}" />
+        
+    </VerticalStackLayout>
+
+</ContentPage>

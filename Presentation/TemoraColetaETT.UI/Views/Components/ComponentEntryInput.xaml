@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TemoraColetaETT.UI.Views.Components.ComponentEntryInput"
+    x:Name="this">
+    
+    <VerticalStackLayout Spacing="2">
+        <Label 
+            Text="{Binding Source={x:Reference this}, 
+            Path=Label}"
+            VerticalOptions="Center"
+            HorizontalOptions="Start" />
+        
+        <Entry 
+            Placeholder="{Binding Source={x:Reference this}, Path=Placeholder}"
+            Text="{Binding Source={x:Reference this}, Path=Valor, Mode=TwoWay}"
+            Keyboard="{Binding Source={x:Reference this}, Path=TipoTeclado}"
+            MaxLength="{Binding Source={x:Reference this}, Path=MaxLength}"
+            Margin="0,0,0,10" />
+        
+    </VerticalStackLayout>
+</ContentView>

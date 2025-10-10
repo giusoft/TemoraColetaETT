@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "890da477fb60837d",
+    "type": "split",
+    "children": [
+      {
+        "id": "87a61881f55a3d24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a6387f861dff1b73",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nova aba"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4f0d50e186933272",
+    "type": "split",
+    "children": [
+      {
+        "id": "82ae07e2f8d6454e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc19c438a73c565c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "ff5bd29130b23509",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "5cee806d27e6a85a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6593cf580c4da9a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "84e20e00f9727fa5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d46161638eb7913b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "0c2eac98e5d88950",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "d0c0e00b24d92161",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e4be41f00f90cc39",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "a6387f861dff1b73",
+  "lastOpenFiles": [
+    "helper/guia_final.md",
+    "helper/guia_completo.md",
+    "solucao-navegacao/PersonRegisterViewModel.cs",
+    "solucao-navegacao/DashboardViewModel.cs",
+    "solucao-navegacao/MauiProgram.cs",
+    "solucao-navegacao/AppShell.xaml.cs",
+    "solucao-navegacao/AppShell.xaml",
+    "solucao-navegacao/guia_completo.md",
+    "solucao-navegacao/Captura de tela 2025-10-07 143033.png",
+    "solucao-navegacao",
+    "solucao-navegacao/DashboardView.xaml",
+    "solucao-navegacao/LoginViewModel.cs",
+    "solucao-navegacao/App.xaml.cs",
+    "Captura de tela 2025-10-07 143033.png",
+    "GuiaCadastro/GuiaNavegacaoDinamicaShell.md",
+    "prototipoTelas/RegistrationComponents/Step6_SummaryView.xaml.cs",
+    "prototipoTelas/Captura1.png",
+    "prototipoTelas/Sem título.png",
+    "prototipoTelas/0.jpg",
+    "prototipoTelas/Captura de tela 2025-10-06 111248.png",
+    "GuiaCadastro/GuiaNavegacaoComponentes.md",
+    "GuiaCadastro/01-Estrutura-de-Dados.md",
+    "GuiaCadastro/03-ViewModels.md",
+    "GuiaCadastro/04-Componentes-Reutilizaveis.md",
+    "GuiaCadastro/05-Views-de-Cadastro.md",
+    "GuiaCadastro/06-Navegacao-e-Finalizacao.md",
+    "GuiaCadastro/02-Logica-de-Negocio.md",
+    "GuiaCadastro/00-Visao-Geral.md",
+    "GuiaImplementacao/04-Navegacao.md",
+    "prototipoTelas/Enterprise-Application-Patterns-Using-.NET-MAUI-en.md",
+    "GuiaImplementacao/03-Views-Componentes.md",
+    "GuiaImplementacao/02-ViewModels.md",
+    "GuiaImplementacao/05-Servicos-API.md",
+    "GuiaImplementacao/06-Conectando-Tudo.md",
+    "GuiaImplementacao/01-Introducao.md"
+  ]
+}

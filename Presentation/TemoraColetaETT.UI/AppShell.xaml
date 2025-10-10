@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TemoraColetaETT.UI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:TemoraColetaETT.UI.Views"
+    xmlns:viewModels="clr-namespace:TemoraColetaETT.UI.ViewModels"
+    x:DataType="viewModels:AppShellViewModel"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="Inicio" FlyoutItemIsVisible="True">
+        <ShellContent
+            Title="Inicio"
+            ContentTemplate="{DataTemplate views:DashboardView}"
+            Route="DashboardView" />
+    </FlyoutItem>
+
+    <MenuItem Text="Cadastrar Aluno"
+              Command="{Binding NavigateToStudentRegistrationCommand}" />
+
+    <MenuItem Text="Cadastrar Condutor"
+              Command="{Binding NavigateToDriverRegistrationCommand}" />
+
+    <FlyoutItem Title="Consultar" FlyoutItemIsVisible="True">
+        <ShellContent
+            Title="Dashboard"
+            ContentTemplate="{DataTemplate views:DashboardView}"
+            Route="DashboardView" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Sobre" FlyoutItemIsVisible="True">
+        <ShellContent
+            Title="Dashboard"
+            ContentTemplate="{DataTemplate views:DashboardView}"
+            Route="DashboardView" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Sair" FlyoutItemIsVisible="True">
+        <ShellContent
+            Title="Dashboard"
+            ContentTemplate="{DataTemplate views:DashboardView}"
+            Route="DashboardView" />
+    </FlyoutItem>
+</Shell>
