@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TemoraColetaETT.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+771fa1071f266f3da086ab0c69e5e4bffebe7234")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c481c1b8843ed1fa369f6e2c42295dc3ba88a47")]
 [assembly: System.Reflection.AssemblyProductAttribute("TemoraColetaETT.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TemoraColetaETT.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
