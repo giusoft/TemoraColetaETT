@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:TemoraColetaETT.UI.ViewModels"
+             xmlns:components="clr-namespace:TemoraColetaETT.UI.Views.Components"
+             x:Class="TemoraColetaETT.UI.Views.FacialBiometricsView"
+             x:DataType="viewModels:FacialBiometricsViewModel"
+             Title="Captura Facial">
+
+    <Grid RowDefinitions="*, Auto">
+
+        <!-- Conteúdo Principal -->
+        <VerticalStackLayout Grid.Row="0" Spacing="25" Padding="30,0" VerticalOptions="Center">
+            <Label 
+                Text="Captura de Rosto"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="StartCaptureBtn"
+                Text="Iniciar Captura Facial" 
+                Command="{Binding StartFacialCaptureCommand}"
+                SemanticProperties.Hint="Inicia o processo de captura de rosto"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <!-- Botão de Avançar -->
+        <components:NextStepButton 
+            Grid.Row="1"
+            ButtonCommand="{Binding GoNextCommand}" />
+
+    </Grid>
+</ContentPage>
