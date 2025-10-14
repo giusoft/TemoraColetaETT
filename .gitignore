@@ -60,3 +60,5 @@ project.assets.json
 # Arquivos do Obsidian
 # Ignora a pasta de configuração do cofre do Obsidian.
 .obsidian/
+
+.gitignore
