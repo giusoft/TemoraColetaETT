@@ -362,3 +362,6 @@ C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.U
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\obj\Debug\net9.0-ios\iossimulator-x64\TemoraColetaETT.UI.pdb
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\obj\Debug\net9.0-ios\iossimulator-x64\TemoraColetaETT.UI.genruntimeconfig.cache
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\obj\Debug\net9.0-ios\iossimulator-x64\ref\TemoraColetaETT.UI.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-ios\iossimulator-x64\OpenCvSharp.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-ios\iossimulator-x64\OpenCvSharp.Extensions.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\loadingfile.jpg

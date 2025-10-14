@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TemoraColetaETT.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5d987edb323f59fc307d0f7ea8385112b7cc3a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95fbc51a6afbb11f0f03cddbfb2a0f02edc8b1ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("TemoraColetaETT.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TemoraColetaETT.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

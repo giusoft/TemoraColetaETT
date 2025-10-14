@@ -1096,23 +1096,23 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -1165,6 +1165,70 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "Serilog/4.3.0": {
@@ -1298,15 +1362,6 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Buffers/4.5.1": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
-      },
       "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -1417,33 +1472,23 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -1570,14 +1615,10 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -4063,6 +4104,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -5146,20 +5189,20 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -5209,6 +5252,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -5711,13 +5800,13 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Buffers/4.5.1": {
+      "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         }
       },
       "System.ClientModel/1.0.0": {
@@ -5845,23 +5934,23 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -5990,14 +6079,10 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -8428,6 +8513,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -9511,20 +9598,20 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -9574,6 +9661,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -10076,13 +10209,13 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Buffers/4.5.1": {
+      "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         }
       },
       "System.ClientModel/1.0.0": {
@@ -10210,23 +10343,23 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -10355,14 +10488,10 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -12793,6 +12922,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -13876,20 +14007,20 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -13939,6 +14070,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -14441,13 +14618,13 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Buffers/4.5.1": {
+      "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         }
       },
       "System.ClientModel/1.0.0": {
@@ -14575,23 +14752,23 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -14720,14 +14897,10 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -17158,6 +17331,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -18241,20 +18416,20 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -18304,6 +18479,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -18806,13 +19027,13 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Buffers/4.5.1": {
+      "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         }
       },
       "System.ClientModel/1.0.0": {
@@ -18940,23 +19161,23 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -19085,14 +19306,10 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -21523,6 +21740,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -22609,20 +22828,20 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -22672,6 +22891,56 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {},
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {}
+        },
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -23097,13 +23366,13 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Buffers/4.5.1": {
+      "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/_._": {}
+          "lib/netstandard1.1/System.Buffers.dll": {}
         }
       },
       "System.ClientModel/1.0.0": {
@@ -23231,23 +23500,23 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -23376,14 +23645,10 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -25824,6 +26089,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -26910,23 +27177,23 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -26979,6 +27246,70 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -27449,33 +27780,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -27716,10 +28037,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -28713,6 +29034,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -29772,20 +30095,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -29835,6 +30158,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -30555,23 +30924,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -30802,10 +31171,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -31742,6 +32111,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -32801,20 +33172,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -32864,6 +33235,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -33584,23 +34001,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -33831,10 +34248,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -34771,6 +35188,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -35830,20 +36249,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -35893,6 +36312,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -36613,23 +37078,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -36860,10 +37325,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -37800,6 +38265,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -38859,20 +39326,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -38922,6 +39389,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -39642,23 +40155,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -39889,10 +40402,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -40829,6 +41342,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -41891,20 +42406,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -41954,6 +42469,56 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {},
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {}
+        },
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -42668,23 +43233,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -42915,10 +43480,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -43857,6 +44422,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -44942,23 +45509,23 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -45011,6 +45578,70 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -45563,33 +46194,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -45830,10 +46451,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -46791,6 +47412,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -47849,20 +48472,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -47912,6 +48535,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -48631,23 +49300,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -48878,10 +49547,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -49789,6 +50458,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -50847,20 +51518,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -50910,6 +51581,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -51629,23 +52346,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -51876,10 +52593,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -52787,6 +53504,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -53845,20 +54564,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -53908,6 +54627,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -54624,23 +55389,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -54871,10 +55636,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -55782,6 +56547,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -56840,20 +57607,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -56903,6 +57670,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -57622,23 +58435,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -57869,10 +58682,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -58780,6 +59593,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -59841,20 +60656,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -59904,6 +60719,56 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {},
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {}
+        },
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -60617,23 +61482,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -60864,10 +61729,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -61777,6 +62642,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -62947,23 +63814,23 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -63182,6 +64049,70 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -63734,33 +64665,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -64001,10 +64922,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -64984,6 +65905,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -66099,20 +67022,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
@@ -66294,6 +67217,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -67013,23 +67982,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -67260,10 +68229,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -68187,6 +69156,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -69302,20 +70273,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
@@ -69497,6 +70468,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -70216,23 +71233,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -70463,10 +71480,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -71390,6 +72407,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -72505,20 +73524,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
@@ -72700,6 +73719,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -73416,23 +74481,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -73663,10 +74728,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -74590,6 +75655,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -75705,20 +76772,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
@@ -75900,6 +76967,52 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -76619,23 +77732,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -76866,10 +77979,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -77793,6 +78906,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -78917,20 +80032,20 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
@@ -79116,6 +80231,56 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {},
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {}
+        },
+        "build": {
+          "build/net5.0/_._": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -79829,23 +80994,23 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "related": ".xml"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Formats.Asn1/9.0.9": {
@@ -80076,10 +81241,10 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.6.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
@@ -81005,6 +82170,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -83238,32 +84405,38 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.Win32.SystemEvents/6.0.0": {
-      "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+    "Microsoft.Win32.SystemEvents/8.0.0": {
+      "sha512": "9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
       "type": "package",
-      "path": "microsoft.win32.systemevents/6.0.0",
+      "path": "microsoft.win32.systemevents/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/Microsoft.Win32.SystemEvents.dll",
-        "lib/net461/Microsoft.Win32.SystemEvents.xml",
+        "lib/net462/Microsoft.Win32.SystemEvents.dll",
+        "lib/net462/Microsoft.Win32.SystemEvents.xml",
         "lib/net6.0/Microsoft.Win32.SystemEvents.dll",
         "lib/net6.0/Microsoft.Win32.SystemEvents.xml",
-        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
-        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.xml",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.8.0.0.nupkg.sha512",
         "microsoft.win32.systemevents.nuspec",
         "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
-        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -84046,6 +85219,74 @@
         "dotnet_library_license.txt",
         "netstandard.library.1.6.1.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "OpenCvSharp4/4.11.0.20250507": {
+      "sha512": "j/R+G6xGC5IV2wGRU0/GF5qG/FrP+Uxp8dmNnXFlIdiw8Gfo4mtvKcBOBfS/bn4pP/7FNHLFX/xvMtgPJeDjAA==",
+      "type": "package",
+      "path": "opencvsharp4/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.dll",
+        "lib/net48/OpenCvSharp.xml",
+        "lib/net6.0/OpenCvSharp.dll",
+        "lib/net6.0/OpenCvSharp.xml",
+        "lib/netstandard2.0/OpenCvSharp.dll",
+        "lib/netstandard2.0/OpenCvSharp.xml",
+        "lib/netstandard2.1/OpenCvSharp.dll",
+        "lib/netstandard2.1/OpenCvSharp.xml",
+        "opencvsharp4.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.nuspec"
+      ]
+    },
+    "OpenCvSharp4.Extensions/4.11.0.20250507": {
+      "sha512": "xVA5xpgvI6cWBx+Zf+kL7NIVc8dpT6ScgHq3nV5tlMBpoG2aClKaLSFHtlPAE99ASfqNieaDzeOduJTe4V1aGw==",
+      "type": "package",
+      "path": "opencvsharp4.extensions/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.Extensions.dll",
+        "lib/net48/OpenCvSharp.Extensions.xml",
+        "lib/net6.0/OpenCvSharp.Extensions.dll",
+        "lib/net6.0/OpenCvSharp.Extensions.xml",
+        "lib/netstandard2.0/OpenCvSharp.Extensions.dll",
+        "lib/netstandard2.0/OpenCvSharp.Extensions.xml",
+        "lib/netstandard2.1/OpenCvSharp.Extensions.dll",
+        "lib/netstandard2.1/OpenCvSharp.Extensions.xml",
+        "opencvsharp4.extensions.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.extensions.nuspec"
+      ]
+    },
+    "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+      "sha512": "3PxMXyzR+pkL9UOx2PiBjZm+/iyCIu5D6OlA1sq9MH7oWrfvVnCXJlUYhIJv67F7SLUwUuGwXDIQBfdsL/54lg==",
+      "type": "package",
+      "path": "opencvsharp4.runtime.win/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/OpenCvSharp4.runtime.win.props",
+        "build/net5.0/OpenCvSharp4.runtime.win.props",
+        "build/netcoreapp/OpenCvSharp4.runtime.win.props",
+        "build/netstandard/OpenCvSharp4.runtime.win.props",
+        "opencvsharp4.runtime.win.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.runtime.win.nuspec",
+        "runtimes/win-x64/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll",
+        "runtimes/win-x86/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll"
+      ]
+    },
+    "OpenCvSharp4.Windows/4.11.0.20250507": {
+      "sha512": "Vwbvv8mkK9L8kbaTpQyiguuVj7+2wbXVM2FJkJjsfEIjXjSvzt5mWX/yfYJA6aPH0Mn89FwlBtHo84Cl143C7g==",
+      "type": "package",
+      "path": "opencvsharp4.windows/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "opencvsharp4.windows.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.windows.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -85459,37 +86700,6 @@
         "system.buffers.nuspec"
       ]
     },
-    "System.Buffers/4.5.1": {
-      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
-      "type": "package",
-      "path": "system.buffers/4.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Buffers.dll",
-        "lib/net461/System.Buffers.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.1/System.Buffers.dll",
-        "lib/netstandard1.1/System.Buffers.xml",
-        "lib/netstandard2.0/System.Buffers.dll",
-        "lib/netstandard2.0/System.Buffers.xml",
-        "lib/uap10.0.16299/_._",
-        "ref/net45/System.Buffers.dll",
-        "ref/net45/System.Buffers.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.1/System.Buffers.dll",
-        "ref/netstandard1.1/System.Buffers.xml",
-        "ref/netstandard2.0/System.Buffers.dll",
-        "ref/netstandard2.0/System.Buffers.xml",
-        "ref/uap10.0.16299/_._",
-        "system.buffers.4.5.1.nupkg.sha512",
-        "system.buffers.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.ClientModel/1.0.0": {
       "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
@@ -85947,41 +87157,42 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.Drawing.Common/6.0.0": {
-      "sha512": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+    "System.Drawing.Common/8.0.11": {
+      "sha512": "AVyutHHKrX0Mt9C9T8W3Ccat3cVauUwvN+EqnVpSQi92nwBqoQ+2ZRvGP1S+rKK+6TGXmRflSYNShVjl2mMBlw==",
       "type": "package",
-      "path": "system.drawing.common/6.0.0",
+      "path": "system.drawing.common/8.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net461/System.Drawing.Common.dll",
-        "lib/net461/System.Drawing.Common.xml",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.pdb",
+        "lib/net462/System.Drawing.Common.xml",
         "lib/net6.0/System.Drawing.Common.dll",
+        "lib/net6.0/System.Drawing.Common.pdb",
         "lib/net6.0/System.Drawing.Common.xml",
-        "lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "lib/net7.0/System.Drawing.Common.dll",
+        "lib/net7.0/System.Drawing.Common.pdb",
+        "lib/net7.0/System.Drawing.Common.xml",
+        "lib/net8.0/System.Drawing.Common.dll",
+        "lib/net8.0/System.Drawing.Common.pdb",
+        "lib/net8.0/System.Drawing.Common.xml",
         "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.pdb",
         "lib/netstandard2.0/System.Drawing.Common.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "runtimes/unix/lib/net6.0/System.Drawing.Common.dll",
-        "runtimes/unix/lib/net6.0/System.Drawing.Common.xml",
-        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.xml",
-        "runtimes/win/lib/net6.0/System.Drawing.Common.dll",
-        "runtimes/win/lib/net6.0/System.Drawing.Common.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.xml",
-        "system.drawing.common.6.0.0.nupkg.sha512",
+        "system.drawing.common.8.0.11.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -86608,27 +87819,25 @@
         "system.linq.expressions.nuspec"
       ]
     },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+    "System.Memory/4.6.3": {
+      "sha512": "qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
       "type": "package",
-      "path": "system.memory/4.5.4",
+      "path": "system.memory/4.6.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Memory.dll",
-        "lib/net461/System.Memory.xml",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Memory.targets",
+        "buildTransitive/net462/_._",
+        "lib/net462/System.Memory.dll",
+        "lib/net462/System.Memory.xml",
         "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "lib/netstandard2.1/_._",
+        "system.memory.4.6.3.nupkg.sha512",
+        "system.memory.nuspec"
       ]
     },
     "System.Memory.Data/1.0.2": {

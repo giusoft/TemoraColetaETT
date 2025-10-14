@@ -71,13 +71,11 @@
 	<ItemGroup>
 	  <Compile Remove="ViewModels\SideMenuViewModel.cs" />
 	  <Compile Remove="Views\Components\SideMenuComponent.xaml.cs" />
-	  <Compile Remove="Views\NewPage1.xaml.cs" />
 	  <Compile Remove="Views\PersonRegisterView.xaml.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Remove="Views\Components\SideMenuComponent.xaml" />
-	  <MauiXaml Remove="Views\NewPage1.xaml" />
 	  <MauiXaml Remove="Views\PersonRegisterView.xaml" />
 	</ItemGroup>
 
@@ -111,6 +109,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\RegisterAutomotiveStudentView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RegisterBiometricsFacialView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\RegisterPersonView.xaml">

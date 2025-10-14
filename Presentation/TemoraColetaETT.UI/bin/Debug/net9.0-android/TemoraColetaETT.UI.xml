@@ -4,6 +4,22 @@
         <name>TemoraColetaETT.UI</name>
     </assembly>
     <members>
+        <member name="T:TemoraColetaETT.UI.ViewModels.AppShellViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:TemoraColetaETT.UI.ViewModels.AppShellViewModel.navigateToStudentRegistrationCommand">
+            <summary>The backing field for <see cref="P:TemoraColetaETT.UI.ViewModels.AppShellViewModel.NavigateToStudentRegistrationCommand"/>.</summary>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.AppShellViewModel.NavigateToStudentRegistrationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TemoraColetaETT.UI.ViewModels.AppShellViewModel.NavigateToStudentRegistration"/>.</summary>
+        </member>
+        <member name="F:TemoraColetaETT.UI.ViewModels.AppShellViewModel.navigateToDriverRegistrationCommand">
+            <summary>The backing field for <see cref="P:TemoraColetaETT.UI.ViewModels.AppShellViewModel.NavigateToDriverRegistrationCommand"/>.</summary>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.AppShellViewModel.NavigateToDriverRegistrationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TemoraColetaETT.UI.ViewModels.AppShellViewModel.NavigateToDriverRegistration"/>.</summary>
+        </member>
         <member name="T:TemoraColetaETT.UI.ViewModels.DashboardViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -41,6 +57,60 @@
         </member>
         <member name="P:TemoraColetaETT.UI.ViewModels.LoginViewModel.LoginCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TemoraColetaETT.UI.ViewModels.LoginViewModel.LoginAsync"/>.</summary>
+        </member>
+        <member name="T:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.IsInitializing">
+            <inheritdoc cref="F:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.isInitializing"/>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.IsCameraReady">
+            <inheritdoc cref="F:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.isCameraReady"/>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.CameraImageSource">
+            <inheritdoc cref="F:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.cameraImageSource"/>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.StatusMessage">
+            <inheritdoc cref="F:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.statusMessage"/>
+        </member>
+        <member name="F:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.capturePhotoCommand">
+            <summary>The backing field for <see cref="P:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.CapturePhotoCommand"/>.</summary>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.CapturePhotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TemoraColetaETT.UI.ViewModels.RegisterBiometricsFacialViewModel.CapturePhotoAsync"/>.</summary>
+        </member>
+        <member name="T:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.PersonId">
+            <inheritdoc cref="F:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.personId"/>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.RegistrationType">
+            <inheritdoc cref="F:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.registrationType"/>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.IsDriverRegistration">
+            <inheritdoc cref="F:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.isDriverRegistration"/>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.NextButtonText">
+            <inheritdoc cref="F:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.nextButtonText"/>
+        </member>
+        <member name="M:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.OnPersonIdChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.PersonId"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.PersonId"/> is changed.</remarks>
+        </member>
+        <member name="M:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.OnRegistrationTypeChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.RegistrationType"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.RegistrationType"/> is changed.</remarks>
+        </member>
+        <member name="F:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.nextStepCommand">
+            <summary>The backing field for <see cref="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.NextStepCommand"/>.</summary>
+        </member>
+        <member name="P:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.NextStepCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TemoraColetaETT.UI.ViewModels.RegisterPersonViewModel.NextStep"/>.</summary>
         </member>
         <member name="T:TemoraColetaETT.UI.Resource">
             <summary>
@@ -189,6 +259,30 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Senha">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Senha" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsInitializing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsInitializing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsCameraReady">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsCameraReady" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CameraImageSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CameraImageSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StatusMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StatusMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PersonId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PersonId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RegistrationType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RegistrationType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsDriverRegistration">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsDriverRegistration" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NextButtonText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NextButtonText" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -209,6 +303,30 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Senha">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Senha" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsInitializing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsInitializing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsCameraReady">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsCameraReady" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CameraImageSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CameraImageSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StatusMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StatusMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PersonId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PersonId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RegistrationType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RegistrationType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsDriverRegistration">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsDriverRegistration" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NextButtonText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NextButtonText" generated properties.</summary>
         </member>
     </members>
 </doc>

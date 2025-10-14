@@ -1,0 +1,62 @@
+# Arquivos de Segredos e Configurações de Ambiente
+# Nunca adicione chaves de API, senhas ou connection strings ao repositório.
+.env
+secrets.json
+
+# Dependências e Pacotes
+# O gerenciador de pacotes (NuGet) irá restaurá-los durante o build.
+[Pp]ackages/
+*.nupkg
+
+# Saída de Build e Arquivos Intermediários
+# Esses arquivos são gerados a cada compilação.
+[Bb]in/
+[Oo]bj/
+
+# Arquivos de Configuração do Usuário do Visual Studio
+# Contêm configurações locais do seu ambiente de desenvolvimento.
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos de Cache do Visual Studio e Resharper
+# Caches para melhorar o desempenho do IDE.
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.dtbcache.v2
+.futdcache.v2
+
+# Arquivos de Testes
+# Resultados e relatórios de cobertura de testes.
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+*.build.cs
+
+# Arquivos de Sistema Operacional
+# Metadados do sistema de arquivos que não pertencem ao projeto.
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Linux
+.directory
+
+# Arquivos do .NET
+project.lock.json
+project.assets.json
+
+# Pastas de usuário ou temporárias
+# Pastas que não fazem parte do código-fonte do projeto.
+[Nn]ova pasta/
+
+# Arquivos do Obsidian
+# Ignora a pasta de configuração do cofre do Obsidian.
+.obsidian/

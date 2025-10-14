@@ -307,7 +307,6 @@ C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastr
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -329,8 +328,6 @@ C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastr
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
@@ -352,3 +349,10 @@ C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastr
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\obj\Debug\net9.0\TemoraColetaETT.Infrastructure.Tests.pdb
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\obj\Debug\net9.0\TemoraColetaETT.Infrastructure.Tests.genruntimeconfig.cache
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\obj\Debug\net9.0\ref\TemoraColetaETT.Infrastructure.Tests.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\OpenCvSharp.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\OpenCvSharp.Extensions.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-x64\native\opencv_videoio_ffmpeg4110_64.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Tests\TemoraColetaETT.Infrastructure.Tests\bin\Debug\net9.0\runtimes\win-x86\native\opencv_videoio_ffmpeg4110.dll

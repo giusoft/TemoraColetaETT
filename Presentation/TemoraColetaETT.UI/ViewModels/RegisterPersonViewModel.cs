@@ -1,4 +1,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using TemoraColetaETT.UI.Views;
 
 namespace TemoraColetaETT.UI.ViewModels
 {
@@ -21,6 +23,12 @@ namespace TemoraColetaETT.UI.ViewModels
         public RegisterPersonViewModel()
         {
             NextButtonText = "Avançar";
+        }
+
+        [RelayCommand]
+        private async Task NextStep()
+        {
+            await Shell.Current.GoToAsync(nameof(RegisterBiometricsFacialView));
         }
 
         partial void OnPersonIdChanged(string value)

@@ -58,7 +58,7 @@
           "Azure.Core": "1.38.0",
           "Microsoft.Identity.Client": "4.61.3",
           "Microsoft.Identity.Client.Extensions.Msal": "4.61.3",
-          "System.Memory": "4.5.4",
+          "System.Memory": "4.6.3",
           "System.Security.Cryptography.ProtectedData": "6.0.0",
           "System.Text.Json": "9.0.9",
           "System.Threading.Tasks.Extensions": "4.5.4"
@@ -800,11 +800,11 @@
           "runtime.win.Microsoft.Win32.Primitives": "4.3.0"
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/8.0.0": {
         "runtime": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -971,6 +971,45 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "OpenCvSharp4.Extensions/4.11.0.20250507": {
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "System.Drawing.Common": "8.0.11"
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.Extensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "native": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
+            "fileVersion": "2024.12.0.0"
+          }
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -1188,7 +1227,7 @@
       },
       "SQLitePCLRaw.core/2.1.10": {
         "dependencies": {
-          "System.Memory": "4.5.4"
+          "System.Memory": "4.6.3"
         },
         "runtime": {
           "lib/netstandard2.0/SQLitePCLRaw.core.dll": {
@@ -1314,14 +1353,14 @@
           "runtime.any.System.Diagnostics.Tracing": "4.3.0"
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.11": {
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1124.52103"
           }
         }
       },
@@ -1455,7 +1494,7 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.Memory/4.5.4": {},
+      "System.Memory/4.6.3": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
           "System.Text.Encodings.Web": "6.0.0",
@@ -1894,7 +1933,7 @@
       },
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
-          "System.Drawing.Common": "6.0.0"
+          "System.Drawing.Common": "8.0.11"
         },
         "runtime": {
           "runtimes/win/lib/net6.0/System.Windows.Extensions.dll": {
@@ -1964,6 +2003,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.9",
           "Microsoft.Extensions.Http": "9.0.9",
+          "OpenCvSharp4.Extensions": "4.11.0.20250507",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
           "Serilog": "4.3.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "7.0.0",
@@ -2410,12 +2451,12 @@
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
     },
-    "Microsoft.Win32.SystemEvents/6.0.0": {
+    "Microsoft.Win32.SystemEvents/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
-      "path": "microsoft.win32.systemevents/6.0.0",
-      "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+      "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
     },
     "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
       "type": "package",
@@ -2437,6 +2478,34 @@
       "sha512": "sha512-WcSp3+vP+yHNgS8EV5J7pZ9IRpeDuARBPN28by8zqff1wJQXm26PVU8L3/fYLBJVU7BtDyqNVWq2KlCVvSSR4A==",
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
+    },
+    "OpenCvSharp4/4.11.0.20250507": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j/R+G6xGC5IV2wGRU0/GF5qG/FrP+Uxp8dmNnXFlIdiw8Gfo4mtvKcBOBfS/bn4pP/7FNHLFX/xvMtgPJeDjAA==",
+      "path": "opencvsharp4/4.11.0.20250507",
+      "hashPath": "opencvsharp4.4.11.0.20250507.nupkg.sha512"
+    },
+    "OpenCvSharp4.Extensions/4.11.0.20250507": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xVA5xpgvI6cWBx+Zf+kL7NIVc8dpT6ScgHq3nV5tlMBpoG2aClKaLSFHtlPAE99ASfqNieaDzeOduJTe4V1aGw==",
+      "path": "opencvsharp4.extensions/4.11.0.20250507",
+      "hashPath": "opencvsharp4.extensions.4.11.0.20250507.nupkg.sha512"
+    },
+    "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3PxMXyzR+pkL9UOx2PiBjZm+/iyCIu5D6OlA1sq9MH7oWrfvVnCXJlUYhIJv67F7SLUwUuGwXDIQBfdsL/54lg==",
+      "path": "opencvsharp4.runtime.win/4.11.0.20250507",
+      "hashPath": "opencvsharp4.runtime.win.4.11.0.20250507.nupkg.sha512"
+    },
+    "OpenCvSharp4.Windows/4.11.0.20250507": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vwbvv8mkK9L8kbaTpQyiguuVj7+2wbXVM2FJkJjsfEIjXjSvzt5mWX/yfYJA6aPH0Mn89FwlBtHo84Cl143C7g==",
+      "path": "opencvsharp4.windows/4.11.0.20250507",
+      "hashPath": "opencvsharp4.windows.4.11.0.20250507.nupkg.sha512"
     },
     "runtime.any.System.Collections/4.3.0": {
       "type": "package",
@@ -2865,12 +2934,12 @@
       "path": "system.diagnostics.tracing/4.3.0",
       "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
     },
-    "System.Drawing.Common/6.0.0": {
+    "System.Drawing.Common/8.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
-      "path": "system.drawing.common/6.0.0",
-      "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+      "sha512": "sha512-AVyutHHKrX0Mt9C9T8W3Ccat3cVauUwvN+EqnVpSQi92nwBqoQ+2ZRvGP1S+rKK+6TGXmRflSYNShVjl2mMBlw==",
+      "path": "system.drawing.common/8.0.11",
+      "hashPath": "system.drawing.common.8.0.11.nupkg.sha512"
     },
     "System.Formats.Asn1/9.0.9": {
       "type": "package",
@@ -2956,12 +3025,12 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
-    "System.Memory/4.5.4": {
+    "System.Memory/4.6.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
-      "path": "system.memory/4.5.4",
-      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+      "sha512": "sha512-qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
+      "path": "system.memory/4.6.3",
+      "hashPath": "system.memory.4.6.3.nupkg.sha512"
     },
     "System.Memory.Data/1.0.2": {
       "type": "package",
