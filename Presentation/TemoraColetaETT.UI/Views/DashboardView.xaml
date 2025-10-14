@@ -4,8 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     xmlns:components="clr-namespace:TemoraColetaETT.UI.Views.Components"
-    x:Name="ThisPage"
-    Title="Dashboard">
+        x:Name="ThisPage">
 
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
