@@ -45,6 +45,7 @@
                 IsRunning="{Binding IsInitializing}"
                 IsVisible="{Binding IsInitializing}"
                 HorizontalOptions="Center" />
+            
         </Grid>
     </Grid>
 </ContentPage>

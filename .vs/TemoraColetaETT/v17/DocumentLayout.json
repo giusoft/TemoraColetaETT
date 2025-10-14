@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{93E40C00-4988-4C30-8D50-77C24CBF6D6F}|Presentation\\TemoraColetaETT.UI\\TemoraColetaETT.UI.csproj|c:\\users\\giusoft\\documents\\github\\temoracoletaett\\presentation\\temoracoletaett.ui\\views\\registerbiometricsfacialview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{93E40C00-4988-4C30-8D50-77C24CBF6D6F}|Presentation\\TemoraColetaETT.UI\\TemoraColetaETT.UI.csproj|solutionrelative:presentation\\temoracoletaett.ui\\views\\registerbiometricsfacialview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93E40C00-4988-4C30-8D50-77C24CBF6D6F}|Presentation\\TemoraColetaETT.UI\\TemoraColetaETT.UI.csproj|c:\\users\\giusoft\\documents\\github\\temoracoletaett\\presentation\\temoracoletaett.ui\\viewmodels\\registerbiometricsfacialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93E40C00-4988-4C30-8D50-77C24CBF6D6F}|Presentation\\TemoraColetaETT.UI\\TemoraColetaETT.UI.csproj|solutionrelative:presentation\\temoracoletaett.ui\\viewmodels\\registerbiometricsfacialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 364,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,32 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterBiometricsFacialView.xaml",
-              "DocumentMoniker": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Presentation\\TemoraColetaETT.UI\\Views\\RegisterBiometricsFacialView.xaml",
-              "RelativeDocumentMoniker": "Presentation\\TemoraColetaETT.UI\\Views\\RegisterBiometricsFacialView.xaml",
-              "ToolTip": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Presentation\\TemoraColetaETT.UI\\Views\\RegisterBiometricsFacialView.xaml",
-              "RelativeToolTip": "Presentation\\TemoraColetaETT.UI\\Views\\RegisterBiometricsFacialView.xaml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T17:44:18.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterBiometricsFacialViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Presentation\\TemoraColetaETT.UI\\ViewModels\\RegisterBiometricsFacialViewModel.cs",
-              "RelativeDocumentMoniker": "Presentation\\TemoraColetaETT.UI\\ViewModels\\RegisterBiometricsFacialViewModel.cs",
-              "ToolTip": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Presentation\\TemoraColetaETT.UI\\ViewModels\\RegisterBiometricsFacialViewModel.cs",
-              "RelativeToolTip": "Presentation\\TemoraColetaETT.UI\\ViewModels\\RegisterBiometricsFacialViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T17:41:43.72Z",
-              "EditorCaption": ""
             }
           ]
         }
