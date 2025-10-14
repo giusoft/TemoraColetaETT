@@ -53,10 +53,6 @@ Desktop.ini
 project.lock.json
 project.assets.json
 
-# Pastas de usuário ou temporárias
-# Pastas que não fazem parte do código-fonte do projeto.
-[Nn]ova pasta/
-
 # Arquivos do Obsidian
 # Ignora a pasta de configuração do cofre do Obsidian.
 .obsidian/
