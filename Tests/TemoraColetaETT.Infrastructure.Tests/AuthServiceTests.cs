@@ -27,8 +27,8 @@ namespace TemoraColetaETT.Infrastructure.Tests
             // IMPORTANTE: Substitua com um CPF e SENHA que existam e sejam válidos na sua API.
             var loginRequest = new LoginRequestDto
             {
-                Cpf = "06262658513",
-                Senha = "SenhaSegura123"
+                Cpf = "00000000000",
+                Senha = "123Mudar!"
             };
 
             // Act (Quando)
