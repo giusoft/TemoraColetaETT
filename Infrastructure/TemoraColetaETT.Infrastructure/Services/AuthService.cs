@@ -3,8 +3,10 @@ using System.Text.Json;
 using TemoraColetaETT.Application.DTOs;
 using TemoraColetaETT.Application.Interfaces;
 using TemoraColetaETT.Infrastructure.Configuration;
-using Microsoft.Maui.Storage;
 
+#if __MAUI__
+using Microsoft.Maui.Storage;
+#endif
 
 namespace TemoraColetaETT.Infrastructure.Services
 {
@@ -44,6 +46,10 @@ namespace TemoraColetaETT.Infrastructure.Services
             return loginResponse;
         }
 
+#if __MAUI__
         public Task<string?> GetTokenAsync() => SecureStorage.GetAsync("auth_token");
+#else
+        public Task<string?> GetTokenAsync() => Task.FromResult<string?>(null);
+#endif
     }
 }
