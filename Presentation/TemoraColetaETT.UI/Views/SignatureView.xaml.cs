@@ -10,28 +10,25 @@ namespace TemoraColetaETT.UI.Views
         private PointCollection currentPoints;
         private Polyline currentStroke;
 
-        // O construtor é injetado pelo MAUI com o ViewModel registrado
         public SignatureView(SignatureViewModel viewModel)
         {
             InitializeComponent();
             BindingContext = viewModel;
 
-            // 1. Assinar o evento de Limpeza do ViewModel (Esta lógica permanece)
+            // 1. Assinar o evento de Limpeza do ViewModel (Esta lï¿½gica permanece)
             viewModel.PropertyChanged += (sender, e) =>
             {
                 if (e.PropertyName == nameof(viewModel.NeedsClear) && viewModel.NeedsClear)
                 {
                     SignatureArea.Children.Clear();
-                    // Reinicia a flag para que a próxima chamada funcione
                     viewModel.NeedsClear = false;
                 }
             };
         }
 
-        // Método que lida com o início do desenho (substitui GestureStatus.Started)
+        // Iniciar a assinatura
         private void OnPointerPressed(object sender, PointerEventArgs e)
         {
-            // Obtém a posição absoluta do toque/mouse DENTRO da SignatureArea
             var location = e.GetPosition(SignatureArea).GetValueOrDefault();
 
             currentPoints = new PointCollection { location };
@@ -48,23 +45,19 @@ namespace TemoraColetaETT.UI.Views
             SignatureArea.Children.Add(currentStroke);
         }
 
-        // Método que lida com o desenho contínuo (substitui GestureStatus.Running)
+        // Lida com o desenho continuo da assinatura
         private void OnPointerMoved(object sender, PointerEventArgs e)
         {
             if (currentStroke != null)
             {
-                // 1. Obtém a posição absoluta do toque/mouse
                 var location = e.GetPosition(SignatureArea).GetValueOrDefault();
-
-                // 2. Adiciona o novo ponto à Polyline
                 currentPoints.Add(location);
-
                 currentStroke.IsVisible = false;
                 currentStroke.IsVisible = true;
             }
         }
 
-        // Método que lida com o fim do desenho (substitui GestureStatus.Completed)
+        // Fim da assinatura
         private void OnPointerReleased(object sender, PointerEventArgs e)
         {
             currentPoints = null;
