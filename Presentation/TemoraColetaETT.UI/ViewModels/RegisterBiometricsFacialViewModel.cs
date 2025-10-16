@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.Input;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.Maui.Dispatching;
+using TemoraColetaETT.UI.Views;
 using TemoraColetaETT.Application.Interfaces;
 
 namespace TemoraColetaETT.UI.ViewModels
@@ -29,6 +30,10 @@ namespace TemoraColetaETT.UI.ViewModels
         {
             _cameraService = cameraService;
             _dispatcher = dispatcher;
+        }
+        private async Task NextStep()
+        {
+            await Shell.Current.GoToAsync(nameof(SignatureView));
         }
 
         public async Task OnAppearingAsync()
@@ -98,10 +103,7 @@ namespace TemoraColetaETT.UI.ViewModels
             if (photoBytes != null)
             {
                 Cleanup();
-            }
-            else
-            {
-                // Implementar
+                await NextStep();
             }
         }
     }
