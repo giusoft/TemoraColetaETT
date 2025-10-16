@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kgEPgoMtQf6iDNUNYWRb5Jd+79WddwEba/dHQK6tFoqaTg+9ESVOUN3P75hZY03Y8altwvSE1LuIDlKjRXepiA==",
+  "dgSpecHash": "9e7wEAvDA8M=",
   "success": true,
-  "projectFilePath": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Domain/TemoraColetaETT.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Domain\\TemoraColetaETT.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

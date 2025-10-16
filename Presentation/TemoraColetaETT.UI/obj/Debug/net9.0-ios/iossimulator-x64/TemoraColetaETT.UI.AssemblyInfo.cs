@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TemoraColetaETT.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2f17c97331353989b5b723ca0121afc6d7eadc25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9f810c82d3f594fc806680179d4b239df49bbcf8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TemoraColetaETT.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TemoraColetaETT.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

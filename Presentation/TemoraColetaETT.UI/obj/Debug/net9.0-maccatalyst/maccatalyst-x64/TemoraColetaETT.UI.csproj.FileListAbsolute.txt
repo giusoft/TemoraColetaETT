@@ -97,7 +97,6 @@ C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.U
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
-C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.ClientModel.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Configuration.ConfigurationManager.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.Drawing.Common.dll
 C:\Users\Giusoft\Documents\GitHub\TemoraColetaETT\Presentation\TemoraColetaETT.UI\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\System.IdentityModel.Tokens.Jwt.dll

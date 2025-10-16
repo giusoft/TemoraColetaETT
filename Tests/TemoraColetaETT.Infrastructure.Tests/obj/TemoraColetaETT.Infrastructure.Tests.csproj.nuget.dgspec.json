@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/home/cyro/projetos/TemoraColetaETT/Tests/TemoraColetaETT.Infrastructure.Tests/TemoraColetaETT.Infrastructure.Tests.csproj": {}
+    "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Tests\\TemoraColetaETT.Infrastructure.Tests\\TemoraColetaETT.Infrastructure.Tests.csproj": {}
   },
   "projects": {
-    "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Application/TemoraColetaETT.Application.csproj": {
+    "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Application\\TemoraColetaETT.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Application/TemoraColetaETT.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Application\\TemoraColetaETT.Application.csproj",
         "projectName": "TemoraColetaETT.Application",
-        "projectPath": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Application/TemoraColetaETT.Application.csproj",
-        "packagesPath": "/home/cyro/.nuget/packages/",
-        "outputPath": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Application/obj/",
+        "projectPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Application\\TemoraColetaETT.Application.csproj",
+        "packagesPath": "C:\\Users\\Giusoft\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cyro/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Giusoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Domain/TemoraColetaETT.Domain.csproj": {
-                "projectPath": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Domain/TemoraColetaETT.Domain.csproj"
+              "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Domain\\TemoraColetaETT.Domain.csproj": {
+                "projectPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Domain\\TemoraColetaETT.Domain.csproj"
               }
             }
           }
@@ -36,7 +43,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -57,26 +70,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Domain/TemoraColetaETT.Domain.csproj": {
+    "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Domain\\TemoraColetaETT.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Domain/TemoraColetaETT.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Domain\\TemoraColetaETT.Domain.csproj",
         "projectName": "TemoraColetaETT.Domain",
-        "projectPath": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Domain/TemoraColetaETT.Domain.csproj",
-        "packagesPath": "/home/cyro/.nuget/packages/",
-        "outputPath": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Domain/obj/",
+        "projectPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Domain\\TemoraColetaETT.Domain.csproj",
+        "packagesPath": "C:\\Users\\Giusoft\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cyro/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Giusoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,7 +109,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -110,34 +136,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/cyro/projetos/TemoraColetaETT/Infrastructure/TemoraColetaETT.Infrastructure/TemoraColetaETT.Infrastructure.csproj": {
+    "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Infrastructure\\TemoraColetaETT.Infrastructure\\TemoraColetaETT.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cyro/projetos/TemoraColetaETT/Infrastructure/TemoraColetaETT.Infrastructure/TemoraColetaETT.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Infrastructure\\TemoraColetaETT.Infrastructure\\TemoraColetaETT.Infrastructure.csproj",
         "projectName": "TemoraColetaETT.Infrastructure",
-        "projectPath": "/home/cyro/projetos/TemoraColetaETT/Infrastructure/TemoraColetaETT.Infrastructure/TemoraColetaETT.Infrastructure.csproj",
-        "packagesPath": "/home/cyro/.nuget/packages/",
-        "outputPath": "/home/cyro/projetos/TemoraColetaETT/Infrastructure/TemoraColetaETT.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Infrastructure\\TemoraColetaETT.Infrastructure\\TemoraColetaETT.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Giusoft\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Infrastructure\\TemoraColetaETT.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cyro/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Giusoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Application/TemoraColetaETT.Application.csproj": {
-                "projectPath": "/home/cyro/projetos/TemoraColetaETT/Core/TemoraColetaETT.Application/TemoraColetaETT.Application.csproj"
+              "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Application\\TemoraColetaETT.Application.csproj": {
+                "projectPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Core\\TemoraColetaETT.Application\\TemoraColetaETT.Application.csproj"
               }
             }
           }
@@ -146,7 +179,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -177,6 +216,16 @@
             "Microsoft.Extensions.Http": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Maui.Controls": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.100, )"
+            },
+            "Microsoft.Maui.Controls.Compatibility": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.100, )"
             },
             "OpenCvSharp4.Extensions": {
               "target": "Package",
@@ -215,34 +264,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/cyro/projetos/TemoraColetaETT/Tests/TemoraColetaETT.Infrastructure.Tests/TemoraColetaETT.Infrastructure.Tests.csproj": {
+    "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Tests\\TemoraColetaETT.Infrastructure.Tests\\TemoraColetaETT.Infrastructure.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cyro/projetos/TemoraColetaETT/Tests/TemoraColetaETT.Infrastructure.Tests/TemoraColetaETT.Infrastructure.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Tests\\TemoraColetaETT.Infrastructure.Tests\\TemoraColetaETT.Infrastructure.Tests.csproj",
         "projectName": "TemoraColetaETT.Infrastructure.Tests",
-        "projectPath": "/home/cyro/projetos/TemoraColetaETT/Tests/TemoraColetaETT.Infrastructure.Tests/TemoraColetaETT.Infrastructure.Tests.csproj",
-        "packagesPath": "/home/cyro/.nuget/packages/",
-        "outputPath": "/home/cyro/projetos/TemoraColetaETT/Tests/TemoraColetaETT.Infrastructure.Tests/obj/",
+        "projectPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Tests\\TemoraColetaETT.Infrastructure.Tests\\TemoraColetaETT.Infrastructure.Tests.csproj",
+        "packagesPath": "C:\\Users\\Giusoft\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Tests\\TemoraColetaETT.Infrastructure.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cyro/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Giusoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/cyro/projetos/TemoraColetaETT/Infrastructure/TemoraColetaETT.Infrastructure/TemoraColetaETT.Infrastructure.csproj": {
-                "projectPath": "/home/cyro/projetos/TemoraColetaETT/Infrastructure/TemoraColetaETT.Infrastructure/TemoraColetaETT.Infrastructure.csproj"
+              "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Infrastructure\\TemoraColetaETT.Infrastructure\\TemoraColetaETT.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Giusoft\\Documents\\GitHub\\TemoraColetaETT\\Infrastructure\\TemoraColetaETT.Infrastructure\\TemoraColetaETT.Infrastructure.csproj"
               }
             }
           }
@@ -251,7 +307,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -290,7 +352,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
