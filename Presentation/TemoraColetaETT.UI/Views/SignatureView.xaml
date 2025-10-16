@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemoraColetaETT.UI.Views.SignatureView"
+             xmlns:vm="clr-namespace:TemoraColetaETT.UI.ViewModels"
+             x:DataType="vm:SignatureViewModel"
+             Title="Captura de Assinatura">
+
+    <Grid RowDefinitions="*, Auto" BackgroundColor="White">
+
+        <Border Grid.Row="0"
+                Stroke="Black"
+                StrokeThickness="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="600"
+                HeightRequest="300"
+                BackgroundColor="White">
+
+                <AbsoluteLayout x:Name="SignatureArea">
+                    <AbsoluteLayout.GestureRecognizers>
+                        <PointerGestureRecognizer PointerMoved="OnPointerMoved" 
+                                      PointerPressed="OnPointerPressed"
+                                      PointerReleased="OnPointerReleased" />
+                    </AbsoluteLayout.GestureRecognizers>
+                </AbsoluteLayout>
+        </Border>
+
+        <HorizontalStackLayout Grid.Row="1" 
+                               Spacing="20"
+                               HorizontalOptions="Center"
+                               Margin="0, 10">
+
+            <Button Text="Limpar" 
+                    Command="{Binding ClearSignatureCommand}" 
+                    WidthRequest="150"/>
+
+            <Button Text="Salvar e Avançar" 
+                    Command="{Binding SaveAndAdvanceCommand}" 
+                    WidthRequest="150"/>
+
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>
