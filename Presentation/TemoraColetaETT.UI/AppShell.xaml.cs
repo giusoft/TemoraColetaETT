@@ -14,6 +14,7 @@ namespace TemoraColetaETT.UI
             Routing.RegisterRoute(nameof(DashboardView), typeof(DashboardView));
             Routing.RegisterRoute(nameof(RegisterPersonView), typeof(RegisterPersonView));
             Routing.RegisterRoute(nameof(RegisterBiometricsFacialView), typeof(RegisterBiometricsFacialView));
+            Routing.RegisterRoute(nameof(SignatureView), typeof(SignatureView));
         }
     }
 }
